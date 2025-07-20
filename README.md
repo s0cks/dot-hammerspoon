@@ -1,0 +1,4 @@
+# Hammerspoon Configuration
+
+TBD
+
