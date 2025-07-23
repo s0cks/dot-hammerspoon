@@ -1,4 +1,4 @@
-local utils = require("utils")
+local utils = require('utils')
 
 ---@alias OnAppEvent function(event)
 ---@class AppEventHandler
@@ -14,8 +14,8 @@ local utils = require("utils")
 
 ---@type WatcherConfig
 return {
-	RPCS3 = {
-		on_launched = utils.toggle_ble,
-		on_terminated = utils.toggle_ble,
-	},
+  RPCS3 = {
+    on_launched = utils.toggle_ble,
+    on_terminated = utils.toggle_ble,
+  },
 }

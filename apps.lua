@@ -1,3 +1,4 @@
 return {
-	aerospace = "/Applications/AeroSpace.app",
+  boop = '/Applications/Boop.app',
+  aerospace = '/Applications/AeroSpace.app',
 }
