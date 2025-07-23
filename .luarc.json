@@ -1,7 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
   "runtime": {
-    "version": "LuaJIT"
+    "version": "LuaJIT",
+    "path": [
+      "?.lua"
+    ]
   },
   "completion": {
     "callSnippet": "Both",
@@ -10,8 +13,7 @@
   },
   "diagnostics": {
     "globals": [
-      "vim",
-      "Snacks"
+      "hs"
     ],
     "ignoredFiles": "Disable"
   },
