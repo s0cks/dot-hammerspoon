@@ -11,7 +11,6 @@ local function find_main_desktop_space()
 end
 
 local desktop_space = find_main_desktop_space()
-print("desktop space: " .. hs.inspect(desktop_space))
 
 function M.move_window_to_main_desktop(window)
 	hs.spaces.moveWindowToSpace(window, desktop_space)
