@@ -4,7 +4,9 @@ if not bar then
   return nil
 end
 bar:setTooltip('Yabai')
-bar:setIcon('/Users/tazz/.hammerspoon/resources/yabai/icon.png')
+
+local hsconfig_dir = os.getenv('HAMMERSPOON_CONFIG_DIR')
+bar:setIcon(hsconfig_dir .. '/resources/yabai/icon.png')
 
 local enable = {
   title = 'Enable Yabai',
