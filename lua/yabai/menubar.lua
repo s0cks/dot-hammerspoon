@@ -5,7 +5,7 @@ if not bar then
 end
 bar:setTooltip('Yabai')
 
-local hsconfig_dir = os.getenv('HAMMERSPOON_CONFIG_DIR')
+local hsconfig_dir = os.getenv('HOME') .. '/.config/hammerspoon'
 bar:setIcon(hsconfig_dir .. '/resources/yabai/icon.png')
 
 local enable = {
