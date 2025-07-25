@@ -1,10 +1,13 @@
 require('hs.ipc')
 
 local hsconfig_dir = '/Users/tazz/.config/hammerspoon'
-
-package.path = package.path .. ';' .. hsconfig_dir .. '/?.lua'
-package.path = package.path .. ';' .. hsconfig_dir .. '/lua/?.lua'
-package.path = package.path .. ';' .. hsconfig_dir .. '/lua/?/init.lua'
+local paths = {
+  hsconfig_dir .. '/?.lua',
+  hsconfig_dir .. '/lua/?.lua',
+  hsconfig_dir .. '/lua/?/init.lua',
+}
+package.path = package.path .. ';' .. table.concat(paths, ';')
+print('--- package.path: ' .. package.path)
 
 require('hotkeys')
 require('yabai')
