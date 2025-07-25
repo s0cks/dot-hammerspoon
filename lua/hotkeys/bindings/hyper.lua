@@ -43,4 +43,10 @@ return {
       utils.open_vim_session('~')
     end,
   },
+  {
+    'o',
+    function()
+      hs.application.open(apps.obsidian)
+    end,
+  },
 }
