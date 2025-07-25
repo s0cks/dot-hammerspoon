@@ -16,8 +16,13 @@ end
 
 local function reload_hammerspoon()
   hs.reload()
-  notifications.hammerspoon_reloaded.show()
+  hs.alert('Hammerspoon Reloaded!')
 end
+
+local cmd_shift = {
+  'cmd',
+  'shift',
+}
 
 local hyper_key = {
   'cmd',
@@ -27,15 +32,58 @@ local hyper_key = {
 }
 
 local pastebin = require('pastebin')
+local yabai = require('yabai')
 
 return {
+  {
+    cmd_shift,
+    {
+      {
+        'l',
+        function()
+          yabai.window.swap('east')
+        end,
+      },
+      {
+        'h',
+        function()
+          yabai.window.swap('west')
+        end,
+      },
+      {
+        'j',
+        function()
+          yabai.window.swap('south')
+        end,
+      },
+      {
+        'k',
+        function()
+          yabai.window.swap('north')
+        end,
+      },
+      {
+        'g',
+        function()
+          yabai.space.toggle('gap')
+          yabai.space.toggle('padding')
+        end,
+      },
+      {
+        'f',
+        function()
+          yabai.window.toggle('float')
+        end,
+      },
+    },
+  },
   {
     hyper_key,
     {
       {
         'r',
         function()
-          hs.alert.show('hyper')
+          reload_hammerspoon()
         end,
       },
       {

@@ -3,7 +3,9 @@
   "runtime": {
     "version": "LuaJIT",
     "path": [
-      "?.lua"
+      "?.lua",
+      "lua/?.lua",
+      "lua/?/init.lua"
     ]
   },
   "completion": {
