@@ -22,7 +22,7 @@ return {
   {
     'h',
     function()
-      utils.open_vim_session('~/.hammerspoon')
+      utils.open_vim_session('~/.config/hammerspoon/')
     end,
   },
   {
@@ -41,6 +41,12 @@ return {
     'n',
     function()
       utils.open_vim_session('~')
+    end,
+  },
+  {
+    'y',
+    function()
+      utils.open_yazi_session('~/')
     end,
   },
   {

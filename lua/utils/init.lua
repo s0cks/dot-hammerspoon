@@ -20,6 +20,10 @@ function M.open_vim_session(dir)
   hs.execute('kt-vim-session ' .. dir, true)
 end
 
+function M.open_yazi_session(dir)
+  hs.execute('kt-yazi-session' .. dir, true)
+end
+
 function M.get_app_id_from_bundle_path(path)
   local info = hs.application.infoForBundlePath(path)
   return info and info['CFBundleIdentifier'] or nil
