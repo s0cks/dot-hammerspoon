@@ -10,7 +10,6 @@ package.path = package.path .. ';' .. table.concat(paths, ';')
 print('--- package.path: ' .. package.path)
 
 require('hotkeys')
-require('yabai')
 
 hs.urlevent.bind('hello-world', function(event, params)
   hs.alert.show('Hello World')

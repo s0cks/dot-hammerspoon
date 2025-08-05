@@ -1,12 +1,19 @@
 local utils = require('utils')
 local pastebin = require('pastebin')
 local apps = require('apps')
+local aerospace = require('aerospace')
 
 local function reload_hammerspoon()
   hs.reload()
 end
 
 return {
+  {
+    'a',
+    function()
+      aerospace.toggle()
+    end,
+  },
   {
     'r',
     function()
