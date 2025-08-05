@@ -29,13 +29,6 @@ function M.get_app_id_from_bundle_path(path)
   return info and info['CFBundleIdentifier'] or nil
 end
 
-function M.toggle_ble()
-  local out, status, exit, rc = hs.execute('blueutil -p toggle', true)
-  if rc ~= 0 then
-    print('failed to toggle bluetooth: ' .. rc)
-  end
-end
-
 ---@alias NotificationClickedCallback function(notification, button)
 
 ---@class NotificationSpec

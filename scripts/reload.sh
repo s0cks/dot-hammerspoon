@@ -1,4 +1,9 @@
-#!/usr/bin/env sh
+#!/usr/bin/env zsh
+HS_EXEC="$HOMEBREW_PREFIX/bin/hs"
+
+# reload hammerspoon
 echo "$@ changed, reloading Hammerspoon..."
-/opt/homebrew/bin/hs -c "hs.reload()"
+$HS_EXEC -c "hs.reload()"
+
+# notify
 osascript -e 'display notification "Hammerspoon Reloaded!" with title "Hammerspoon"'
