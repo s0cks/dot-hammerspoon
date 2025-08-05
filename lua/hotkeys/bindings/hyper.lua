@@ -9,6 +9,12 @@ end
 
 return {
   {
+    'c',
+    function()
+      hs.openConsole()
+    end,
+  },
+  {
     'a',
     function()
       aerospace.toggle()
