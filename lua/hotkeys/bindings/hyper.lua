@@ -11,6 +11,7 @@ return {
   {
     'c',
     function()
+      print('opening hammerspoon console')
       hs.openConsole()
     end,
   },
