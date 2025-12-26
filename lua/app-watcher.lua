@@ -17,14 +17,6 @@ local watchers = {
     on_launched = blueutil.toggle(),
     on_terminated = blueutil.toggle(),
   },
-  ['Google Chrome'] = {
-    on_activated = function()
-      print('--- chrome activated')
-    end,
-    on_deactivated = function()
-      print('--- chrome deactivated')
-    end,
-  },
 }
 
 local app_events = {
