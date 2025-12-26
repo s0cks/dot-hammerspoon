@@ -17,14 +17,6 @@ local watchers = {
     on_launched = blueutil.toggle(),
     on_terminated = blueutil.toggle(),
   },
-  ['YouTube Music'] = {
-    on_launched = function()
-      print('--- youtube music launched')
-    end,
-    on_terminated = function()
-      print('--- youtube music terminated')
-    end,
-  },
 }
 
 local app_events = {
