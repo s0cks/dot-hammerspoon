@@ -1,5 +1,4 @@
-local utils = require('utils')
-local blueutil = require('blueutil')
+local blueutil = require('utils.blueutil')
 
 ---@alias OnAppEvent function(event)
 ---@class AppEventHandler
