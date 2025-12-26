@@ -26,5 +26,5 @@ print('-- runtime path: ' .. package.path)
 require('url-events')
 
 --- Configure & start the app watcher
-local app_watcher = require('app_watcher')
+local app_watcher = require('app-watcher')
 app_watcher:start()
